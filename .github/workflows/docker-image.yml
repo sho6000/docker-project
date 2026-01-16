@@ -2,7 +2,12 @@ name: CI testing workflow
 
 on: 
   push:
-    branches: [ "master" ]
+    branches: 
+      - master
+    paths:
+      - Dockerfile
+    paths-ignore:
+      - README.md
 
   workflow_dispatch:
     inputs:
