@@ -25,7 +25,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker Image
-        runs: docker build . -t shoun6000/testing-githubactions:shounlatest
+        run: docker build . -t shoun6000/testing-githubactions:shounlatest
       - name: Push Docker Image
         run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_TOKEN }}
