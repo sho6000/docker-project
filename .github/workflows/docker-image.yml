@@ -5,9 +5,9 @@ on:
     branches: 
       - master
     paths:
-      - Dockerfile
+      - 'Dockerfile'
     paths-ignore:
-      - README.md
+      - 'README.md'
 
   workflow_dispatch:
     inputs:
